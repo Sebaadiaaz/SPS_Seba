@@ -23,6 +23,9 @@ from Obstacles import Obstacles
 
 
 class Vehicle():
+
+    def prueba(self,prueba):
+        self.location = prueba # línea de prueba de sincronización
     
     def __init__(self, index, location, power, p_resource_keeping,RCrange,target_distance,obstacles_bool,obstacles,nr):
         self.index = index
