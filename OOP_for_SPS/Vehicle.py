@@ -27,7 +27,7 @@ class Vehicle():
     def prueba(self,prueba):
         self.location = prueba # línea de prueba de sincronización
     
-    def __init__(self, index, location, power, p_resource_keeping,RCrange,target_distance,obstacles_bool,obstacles,nr):
+    def __init__(self, index, location, power, p_resource_keeping,RCrange,target_distance,obstacles_bool,obstacles,nr,cl):
         self.index = index
         self.type = location[3]
         #print(self.type) just to dbug the type
@@ -76,6 +76,7 @@ class Vehicle():
         self.obstacles=obstacles # Getting obstacles from main class
         self.lastSel_t=float('inf')
         self.nr_bool = nr
+        self.cl_bool = cl # variable para activación de cluster
 
   
 
